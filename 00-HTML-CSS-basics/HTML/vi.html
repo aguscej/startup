@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <h1>Sign up form</h1>
+    <form>
+      <input type="text" name="firstName" value="" required> First Name<br>
+      <input type="text" name="fastName" value="" required> Last Name<br>
+      <input type="email" name="email" value=""> E-Mail<br>
+      <input type="number" name="day" min="1" max="31" />
+      <input type="number" name="month" min="1" max="12"/>
+      <input type="number" name="year" min="1930" max="2016"/>Birthday (day/month/year)<br>
+      <select name="favouriteSport"> 
+        <option value="tennis">Tennis</option>
+        <option value="golf">Golf</option>
+        <option value="soccer">Soccer</option>
+        <option value="voleyball">Voleyball</option>
+        <option value="other">Other</option>
+      </select> Favourite Sport<br>
+      <textarea>Something about you</textarea><br>
+      <button type="submit" value="Submit">Submit</button>
+      <button type="reset">Clear</button>
+    </form>
+  </body>
+</html>

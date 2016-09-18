@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+}
+
+.col-1 {
+  width: 16.66%;
+}
+
+.col-2 {
+  width: 33.33%;  
+}
+
+.col-3 {
+  width: 50%;
+}
+
+.col-4 {
+  width: 66.66%;
+}
+
+.col-5 {
+  width: 83.33%;
+}
+
+.col-6 {
+  width: 100%;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;    
+    height: 100%;
+    position: relative;
+}
+
+.row-1 {
+  height: 33%;
+}
+
+.row-2 {
+  height: 66%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+img {  
+  width: 100%;  
+  height: 100%;
+}
+
+.screen {
+  background-color: rgba(0,0,0,0.5);
+  left: 0;
+  top: 0;
+  border-radius: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0;  
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.screen:hover {
+  opacity: 1;
+}
+
+.data {
+  color: #FFFFFF;
+  font-family: "Arial", "Cambria", "Times New Roman";
+  font-weight: bold;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-left: -30px;
+}
+.screen:hover .data {
+  margin-left: 0;
+}
