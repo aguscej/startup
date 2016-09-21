@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+  font-family: "Arial";
+  font-size: 14px;
+}
+
+aside {
+  float : right;
+}
+
+article {
+  padding-bottom: 3em;
+}
