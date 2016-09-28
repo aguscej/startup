@@ -1,3 +1,3 @@
-$( document ).ready(function() {
-  $('.hidden').children().css('visibility','visible');  
+$( document ).ready(function() {  
+  $('.hidden').fadeIn('slow');
 });
