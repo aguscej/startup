@@ -1,0 +1,23 @@
+{
+  "name": "topic3",
+  "version": "1.0.0",
+  "description": "topic 3 bootcamp 2016",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "aguscej/startup/\u0016NodeJS-NPM-JSModules"
+  },
+  "keywords": [
+    "nodejs",
+    "npm",
+    "js",
+    "modules",
+    "topic",
+    "3"
+  ],
+  "author": "Agustín Cejas",
+  "license": "ISC"
+}
