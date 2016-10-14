@@ -1,0 +1,18 @@
+
+<div ng-controller="MovieDetailsCtrl">
+  <h1>Movie details</h1>
+  <div>
+    <span><b>Title:</b> {{ mov.title}}</span><br>
+    <span><b>Genre:</b> {{ mov.genre}}</span>
+  </div>
+  <button ng-click="toEdit=true" ng-show="!toEdit">Edit</button>
+  <div  ng-show="toEdit">
+    <span>Title:</span>
+    <input type="text" ng-model="temp.title">
+    <span>Genre:</span>
+    <input type="text" ng-model="temp.genre">    
+    <button  ng-click="saveChanges();toEdit=false">OK</button>  
+    <button  ng-click="toEdit=false">Cancel</button>  
+  </div>
+  
+</div>

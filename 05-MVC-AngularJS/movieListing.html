@@ -1,0 +1,15 @@
+<div ng-controller="MoviesCtrl">
+  <h1>Movies</h1>
+  <div ng-repeat="movie in movies track by $index">          
+  	<a ng-click="setIndex($index)" href="#details">{{ movie.title }} </a><br>
+    <button ng-click="deleteMovie($index)">Delete</button>  
+  </div>        
+  <br><button ng-click="toAdd=true">Add</button>  
+  <div ng-show="toAdd">
+    <span>Title:</span>
+    <input type="text" ng-model="newMovie.title">
+    <span>Genre:</span>
+    <input type="text" ng-model="newMovie.genre">
+    <button ng-hide="!toAdd" ng-click="addMovie();toAdd=false">OK</button>
+</div>
+
