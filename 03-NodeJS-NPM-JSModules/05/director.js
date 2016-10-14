@@ -1,8 +1,7 @@
 function Director() {   
 }
 Director.prototype = {
-  constructor: Director,   
+  constructor: Director
 };
 
-var Movie = require('./movie');
 module.exports =  Director;

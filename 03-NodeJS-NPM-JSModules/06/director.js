@@ -9,5 +9,4 @@ Director.prototype = {
   }
 };
 
-var Movie = require('./movie');
 module.exports =  Director;

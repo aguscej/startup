@@ -2,23 +2,20 @@
 function Director() {   
 }
 Director.prototype = {
-  constructor: Director,   
+  constructor: Director
 };
 
-var Movie = require('./movie');
 module.exports =  Director;
-},{"./movie":2}],2:[function(require,module,exports){
+},{}],2:[function(require,module,exports){
 function Movie() { 
   this.attributes = {};  
 }
 Movie.prototype = {
   constructor: Movie,
-  play: function()  {
-    $( document ).trigger("playing");
+  play: function()  {    
     console.log("playing "+this.attributes.title + "...");
   },
-  stop: function() {
-    $( document ).trigger("stopped");   
+  stop: function() {    
     console.log(this.attributes.title + " stopped ...");
   },
   set: function(attr,value) {        
@@ -29,8 +26,10 @@ Movie.prototype = {
   }        
 };
 
+
+var Director = require('./director');
 module.exports =  Movie;
-},{}],3:[function(require,module,exports){
+},{"./director":1}],3:[function(require,module,exports){
 var Director = require('./director');
 var clintEastwood = new Director();
 var Movie = require('./movie');

@@ -3,12 +3,10 @@ function Movie() {
 }
 Movie.prototype = {
   constructor: Movie,
-  play: function()  {
-    $( document ).trigger("playing");
+  play: function()  {    
     console.log("playing "+this.attributes.title + "...");
   },
-  stop: function() {
-    $( document ).trigger("stopped");   
+  stop: function() {    
     console.log(this.attributes.title + " stopped ...");
   },
   set: function(attr,value) {        

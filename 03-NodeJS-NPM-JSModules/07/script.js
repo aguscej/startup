@@ -5,3 +5,7 @@ var ridleyScott = new Director('Ridley Scott');
 ridleyScott.set('quotes', ['Cast is everything.', 'Do what ...' , "Something...."]);
 alien.set('director', ridleyScott);
 alien.get('director').speak();
+alien.get('director').speak();
+alien.get('director').speak();
+alien.get('director').speak();
+alien.get('director').speak();
